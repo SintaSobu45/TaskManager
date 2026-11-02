@@ -49,11 +49,14 @@ namespace TaskManager.Server
 
             var app = builder.Build();
 
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
+            //if (app.Environment.IsDevelopment())
+            //{
+            //    app.UseSwagger();
+            //    app.UseSwaggerUI();
+            //}
+            // Swagger enabled for API testing
+            app.UseSwagger();
+            app.UseSwaggerUI();
 
             if (!app.Environment.IsDevelopment())
             {
