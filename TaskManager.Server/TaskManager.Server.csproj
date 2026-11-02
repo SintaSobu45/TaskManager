@@ -22,11 +22,11 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\taskmanager.client\taskmanager.client.esproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup Condition="'$(SkipFrontendProject)' != 'true'">
+  <ProjectReference Include="..\taskmanager.client\taskmanager.client.esproj">
+    <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+  </ProjectReference>
+</ItemGroup>
 
   <ItemGroup>
     <Folder Include="Certificates\" />
