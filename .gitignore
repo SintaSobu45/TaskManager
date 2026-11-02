@@ -1,0 +1,59 @@
+# ==============================
+# Visual Studio
+# ==============================
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ==============================
+# .NET / ASP.NET Core
+# ==============================
+**/bin/
+**/obj/
+*.log
+
+# ==============================
+# Node.js / React / Vite
+# ==============================
+**/node_modules/
+**/dist/
+**/.vite/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ==============================
+# Secrets and environment files
+# ==============================
+secrets.json
+**/secrets.json
+.env
+.env.*
+!.env.example
+
+# Local development configuration
+appsettings.Development.json
+
+# ==============================
+# Certificates and private keys
+# ==============================
+**/Certificates/*.pem
+**/Certificates/*.key
+*.pfx
+*.p12
+
+# ==============================
+# OS files
+# ==============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# Temporary files
+# ==============================
+*.tmp
+*.bak
+*.swp
